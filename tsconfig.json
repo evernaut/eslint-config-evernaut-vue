@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext", "ScriptHost"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "ESNext",
+    "types": ["jest", "node"]
+  },
+  "include": ["./src/**/*.ts", "./types/**/*.ts"]
+}

@@ -1,0 +1,54 @@
+name: Pull Request
+on: pull_request
+jobs:
+  install:
+    name: (Pull Request) Install
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out the git branch
+        uses: actions/checkout@v2.3.2
+        with:
+          lfs: true
+      - name: Install npm dependencies
+        uses: ./.github/actions/install
+      - name: Zip node_modules
+        run: zip -9qry "node_modules.zip" "./" -i "node_modules/*"
+      - name: Upload node_modules.zip
+        uses: actions/upload-artifact@v2.1.4
+        with:
+          name: node_modules.zip
+          path: node_modules.zip
+  lint:
+    name: (Pull Request) Lint
+    needs: install
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out the git branch
+        uses: actions/checkout@v2.3.2
+        with:
+          lfs: true
+      - name: Download node_modules.zip
+        uses: actions/download-artifact@v2.0.5
+        with:
+          name: node_modules.zip
+      - name: Unzip node_modules.zip
+        run: unzip -q node_modules.zip
+      - name: Lint
+        uses: ./.github/actions/lint
+  lint-check-rules:
+    name: (Pull Request) Lint Check Rules
+    needs: install
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out the git branch
+        uses: actions/checkout@v2.3.2
+        with:
+          lfs: true
+      - name: Download node_modules.zip
+        uses: actions/download-artifact@v2.0.5
+        with:
+          name: node_modules.zip
+      - name: Unzip node_modules.zip
+        run: unzip -q node_modules.zip
+      - name: Lint Check Rules
+        uses: ./.github/actions/lint-check-rules
