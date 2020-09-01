@@ -40,7 +40,7 @@
   "name": "eslint-config-evernaut-vue",
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.10.1",
-    "eslint": "^7.7.0",
+    "eslint": "^7.8.0",
     "eslint-plugin-json": "^2.1.2",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^6.2.2",
@@ -64,5 +64,5 @@
     "test:1": "npm run lint-check-rules",
     "test:2": "npm run lint -- --silent"
   },
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

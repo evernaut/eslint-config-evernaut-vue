@@ -17,9 +17,11 @@ module.exports = {
   overrides: [
     {
       files: ["*.ts", "*.tsx", "*.vue"],
-      parser: "@typescript-eslint/parser",
+      parser: "vue-eslint-parser",
       parserOptions: {
         ecmaVersion: 11,
+        extraFileExtensions: [".vue"],
+        parser: "@typescript-eslint/parser",
         project: "./tsconfig.json",
         sourceType: "module",
       },
@@ -32,19 +34,6 @@ module.exports = {
         ...eslintPluginTypescriptEslintRules,
         ...eslintPluginTypescriptEslintRulesDisabledByPrettier,
         ...eslintPluginTypescriptEslintRulesRestrictedByPrettier,
-      },
-    },
-    {
-      files: ["*.vue"],
-      parser: "vue-eslint-parser",
-      parserOptions: {
-        ecmaVersion: 11,
-        extraFileExtensions: [".vue"],
-        parser: "@typescript-eslint/parser",
-        project: "./tsconfig.json",
-        sourceType: "module",
-      },
-      rules: {
         ...eslintNativeRulesDisabledByVue,
         ...eslintPluginVueEslintRules,
         ...eslintPluginVueEslintRulesDisabledByPrettier,

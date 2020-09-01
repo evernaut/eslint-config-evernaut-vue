@@ -54,6 +54,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 - None
 
+## [1.1.0](https://github.com/evernaut/eslint-config-vue/releases/tag/1.1.0 "Release 1.1.0")
+
+**Release Date:** 2020-09-01
+
+### Semantic Version: Minor
+
+- #5: Customize rules for website
+
 ## [1.0.0](https://github.com/evernaut/eslint-config-vue/releases/tag/1.0.0 "Release 1.0.0")
 
 **Release Date:** 2020-08-28

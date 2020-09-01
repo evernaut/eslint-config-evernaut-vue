@@ -6,11 +6,11 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext", "ScriptHost"],
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "node",
     "outDir": "./dist",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src/*"]
     },
     "resolveJsonModule": true,
     "strict": true,
