@@ -17,5 +17,5 @@
     "target": "ESNext",
     "types": ["jest", "node"]
   },
-  "include": ["./src/**/*.ts", "./types/**/*.ts"]
+  "include": ["src/**/*.ts"]
 }

@@ -80,11 +80,11 @@
 15. Log in to npm
 
     ```sh
-    docker run -it --mount src="$(pwd)",target="/opt/evernaut",type="bind" --mount src="$(cd ~/ && pwd)/.npmrc",target="/root/.npmrc",type="bind" evernaut/base:1.1.0 bash -c 'npm login'
+    docker run -it --mount src="$(pwd)",target="/opt/evernaut",type="bind" --mount src="$(cd ~/ && pwd)/.npmrc",target="/root/.npmrc",type="bind" evernaut/base:1.1.1 bash -c 'npm login'
     ```
 
 16. Publish the project
 
     ```sh
-    docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" --mount src="$(cd ~/ && pwd)/.npmrc",target="/root/.npmrc",type="bind" evernaut/base:1.1.0 bash -c 'npm publish --unsafe-perm'
+    docker run -t --mount src="$(pwd)",target="/opt/evernaut",type="bind" --mount src="$(cd ~/ && pwd)/.npmrc",target="/root/.npmrc",type="bind" evernaut/base:1.1.1 bash -c 'npm publish --unsafe-perm'
     ```

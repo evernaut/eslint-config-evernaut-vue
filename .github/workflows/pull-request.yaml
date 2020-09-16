@@ -8,7 +8,7 @@ jobs:
       - name: Check out the git branch
         uses: actions/checkout@v2.3.2
         with:
-          lfs: true
+          lfs: false
       - name: Install npm dependencies
         uses: ./.github/actions/install
       - name: Zip node_modules
@@ -26,7 +26,7 @@ jobs:
       - name: Check out the git branch
         uses: actions/checkout@v2.3.2
         with:
-          lfs: true
+          lfs: false
       - name: Download node_modules.zip
         uses: actions/download-artifact@v2.0.5
         with:
@@ -43,7 +43,7 @@ jobs:
       - name: Check out the git branch
         uses: actions/checkout@v2.3.2
         with:
-          lfs: true
+          lfs: false
       - name: Download node_modules.zip
         uses: actions/download-artifact@v2.0.5
         with:

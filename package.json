@@ -3,20 +3,20 @@
     "url": "https://github.com/evernaut/eslint-config-vue/issues"
   },
   "dependencies": {
-    "eslint-config-evernaut-typescript": "^1.1.1",
+    "eslint-config-evernaut-typescript": "^1.1.2",
     "vue-eslint-parser": "^7.1.0"
   },
   "description": "The Evernaut ESLint config for Vue TypeScript projects.",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.10.1",
-    "eslint": "^7.7.0",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "eslint": "^7.9.0",
     "eslint-plugin-json": "^2.1.2",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^6.2.2",
     "markdownlint": "^0.20.4",
     "markdownlint-cli": "^0.23.2",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.1.1",
+    "prettier": "^2.1.2",
     "typescript": "^4.0.2",
     "yaml-lint": "^1.2.4"
   },
@@ -39,12 +39,12 @@
   "main": "./src/index.js",
   "name": "eslint-config-evernaut-vue",
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.10.1",
-    "eslint": "^7.8.0",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "eslint": "^7.9.0",
     "eslint-plugin-json": "^2.1.2",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^6.2.2",
-    "prettier": "^2.1.1",
+    "prettier": "^2.1.2",
     "typescript": "^4.0.2"
   },
   "repository": {
@@ -64,5 +64,5 @@
     "test:1": "npm run lint-check-rules",
     "test:2": "npm run lint -- --silent"
   },
-  "version": "1.1.0"
+  "version": "1.1.1"
 }
