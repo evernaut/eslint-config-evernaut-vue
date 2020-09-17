@@ -3,7 +3,7 @@
     "url": "https://github.com/evernaut/eslint-config-vue/issues"
   },
   "dependencies": {
-    "eslint-config-evernaut-typescript": "^1.1.2",
+    "eslint-config-evernaut-typescript": "^2.0.0",
     "vue-eslint-parser": "^7.1.0"
   },
   "description": "The Evernaut ESLint config for Vue TypeScript projects.",
@@ -64,5 +64,5 @@
     "test:1": "npm run lint-check-rules",
     "test:2": "npm run lint -- --silent"
   },
-  "version": "1.1.1"
+  "version": "2.0.0"
 }

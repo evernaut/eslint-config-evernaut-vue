@@ -54,13 +54,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 - None
 
-## [1.1.1](https://github.com/evernaut/eslint-config-vue/releases/tag/1.1.1 "Release 1.1.1")
+## [2.0.0](https://github.com/evernaut/eslint-config-vue/releases/tag/2.0.0 "Release 2.0.0")
 
 **Release Date:** 2020-09-16
 
-### Semantic Version: Patch
+### Semantic Version: Major
 
-- #10: Update dependencies
+- #12: Account for typescript-eslint breaking changes
+
+#### Migration Steps
+
+- Update code based on latest rule changes.
 
 ## [1.1.0](https://github.com/evernaut/eslint-config-vue/releases/tag/1.1.0 "Release 1.1.0")
 
