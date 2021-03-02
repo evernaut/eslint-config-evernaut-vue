@@ -4,7 +4,7 @@
   },
   "dependencies": {
     "eslint-config-evernaut-typescript": "^2.0.0",
-    "vue-eslint-parser": "^7.1.0"
+    "vue-eslint-parser": "^7.6.0"
   },
   "description": "The Evernaut ESLint config for Vue TypeScript projects.",
   "devDependencies": {
