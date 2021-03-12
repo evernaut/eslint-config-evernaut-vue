@@ -9,7 +9,7 @@
   "description": "The Evernaut ESLint config for Vue TypeScript projects.",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.1.1",
-    "eslint": "^7.9.0",
+    "eslint": "^7.22.0",
     "eslint-plugin-json": "^2.1.2",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^6.2.2",
@@ -40,7 +40,7 @@
   "name": "eslint-config-evernaut-vue",
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.1.1",
-    "eslint": "^7.9.0",
+    "eslint": "^7.22.0",
     "eslint-plugin-json": "^2.1.2",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^6.2.2",
